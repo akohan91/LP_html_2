@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site name</title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--   Контент сайта-->
+
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-3">
+                    @@include('__mod/__logo.html',{
+                    "modify":""
+                    })
+                </div>
+                <div class="col-xs-8 col-sm-2 pull-right">
+                    @@include('__mod/__search-list.html')
+                </div>
+                <div class="col-xs-12 col-sm-7">
+                    @@include('__mod/__menu.html')
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--main-slider-->
+    <section class="main-slider">
+        @@include('__mod/__slider.html')
+    </section>
+
+    <!--    services-->
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3  ">
+                    @@include('./__mod/__service.html',{ "linkimg": "images/amenities/amenities-items-1.png", "text1": "Web Apps Design", "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi autem, dolorem vel quibusdam?" })
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3  ">
+                    @@include('./__mod/__service.html',{ "linkimg": "images/amenities/amenities-items-2.png", "text1": "Development", "text2": "Lorem5 ipsum dolor sit amet, consectetur adipisicing elit. Harum inventore cumque rerum illo sed iure!" })
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3  ">
+                    @@include('./__mod/__service.html',{ "linkimg": "images/amenities/amenities-items-3.png", "text1": "Customization", "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum inventore cumque rerum illo sed iure!" })
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3  ">
+                    @@include('./__mod/__service.html',{ "linkimg": "images/amenities/amenities-items-4.png", "text1": "Marketing", "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum inventore cumque rerum illo sed iure!" })
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    portfolio-->
+    <section class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    @@include('./__mod/__section-discr.html',{ "modify": "section-discr_portfolio", "text1": "Waxom is Realization of your Ideas.", "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ipsum numquam laborum aliquid neque dolorum quibusdam consectetur, perferendis placeat aut!" })
+                </div>
+                <div class="col-xs-12 triple">
+                    <img class="portfolio-image" src="images/portfolio.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="text-box">
+            <div class="container">
+                @@include('./__mod/__section-discr.html',{ "modify": "section-discr_text-box", "text1": "Waxom Multipurpose WordPress Theme", "text2": "Don't Forget to Rate the Template. Thanks so much!" }) @@include('./__el/__button.html',{ "modify":"btn-link_t-box", "text": "Purchase Now" })
+            </div>
+        </div>
+    </section>
+
+    <!--    projects-->
+    <section class="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    @@include('./__mod/__section-discr.html',{ "modify": "", "text1": "Our Latest Projects.", "text2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam doloribus aliquam sint aut soluta consequatur repudiandae, laboriosam rerum saepe officiis, nulla nostrum eos, aspernatur dolorem nesciunt hic repellendus! Maiores." })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-">
+                    @@include('./__mod/__project-menu.html')
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__project-items.html',{ "image": "images/Projects/project-1.png", "text1": "Claritas Etiam Processus", "text2": "Graphic Design, Mock-Up" })
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__project-items.html',{ "image": "images/Projects/project-2.png", "text1": "Quam Nutamus Farum", "text2": "Photography, Nature" })
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__project-items.html',{ "image": "images/Projects/project-3.png", "text1": "Usus Legentis Videntur", "text2": "Photography, Holiday" })
+                </div>
+                <div class="clearfix visible-md"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__project-items.html',{ "image": "images/Projects/project-4.png", "text1": "Claritas Etiam Processus", "text2": "Photography, Nature" })
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__project-items.html',{ "image": "images/Projects/project-5.png", "text1": "Quam Nutamus Farum", "text2": "Graphic Design, Mock-Up" })
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__project-items.html',{ "image": "images/Projects/project-6.png", "text1": "Usus Legentis Videntur", "text2": "Photography, Holiday" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    @@include('./__el/__button.html',{ "modify":"btn-link_project", "text": "Load More" })
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!--    video-presentacion-->
+    <section class="video">
+        <img class="video__prev-image" src="images/videoprev.png" alt="">
+        <div class="video__prev-control">
+            <div class="video__prev-control__play">
+                <a href="#"><img src="images/videoprev-play.png" alt=""></a>
+            </div>
+            <div class="video__prev-control__text">
+                <h4 class="video__prev-control__text__cap">Waxom Video Presentation</h4>
+                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+            </div>
+            <div class="video__prev-control__time">
+                <span>03:26</span>
+            </div>
+        </div>
+    </section>
+
+    <!--    mobile-->
+    <section class="mobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 col-md-5 col-md-offset-0">
+                    <img class="mobile__image" src="images/bg_mobile.png" alt="">
+                </div>
+                <div class="col-xs-12 col-md-7">
+                    @@include('./__mod/__section-discr.html',{ "modify": "section-discr_mobile", "text1": "Excellent for Mobile Devices.", "text2": "Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum." })
+                    <ul class="mobile__features">
+                        <li>
+                            <img src="images/icons/strlka.png" alt=""> Nam liber tempor cum soluta nobis eleifend option;
+                        </li>
+                        <li>
+                            <img src="images/icons/strlka.png" alt="">Option congue nihil imperdiet doming id quod mazim placerat facer;
+                        </li>
+                        <li>
+                            <img src="images/icons/strlka.png" alt="">Eodem modo typi, qui nunc nobis videntur parum futurum;
+                        </li>
+                        <li>
+                            <img src="images/icons/strlka.png" alt="">Investigationes demonstraverunt lectores
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    counters-->
+    <div class="counters">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-xs-offset-0 col-md-2 col-md-offset-1">
+                    @@include('./__mod/__counter.html',{
+                    "modify":"",
+                    "image":"images/icons/counters/counters-1.png",
+                    "count":"3587",
+                    "caption":"Satisfied Clients"
+                    })
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    @@include('./__mod/__counter.html',{
+                    "modify":"",
+                    "image":"images/icons/counters/counters-2.png",
+                    "count":"207",
+                    "caption":"Cups of coffee"
+                    })
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    @@include('./__mod/__counter.html',{
+                    "modify":"",
+                    "image":"images/icons/counters/counters-3.png",
+                    "count":"2500",
+                    "caption":"Blog posts"
+                    })
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    @@include('./__mod/__counter.html',{
+                    "modify":"",
+                    "image":"images/icons/counters/counters-4.png",
+                    "count":"873",
+                    "caption":"Likes"
+                    })
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    @@include('./__mod/__counter.html',{
+                    "modify":"",
+                    "image":"images/icons/counters/counters-5.png",
+                    "count":"900",
+                    "caption":"We launched"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    posts-->
+    <section class="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    @@include('./__mod/__section-discr.html',{ "modify": "section-discr_posts", "text1": "Recent Posts.", "text2": "Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem." })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__post.html',{ "modify": "", "image":"images/posts/post-1.png", "caption": "Lorem ipsum dolor sit amet", "text": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium." })
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__post.html',{ "modify": "", "image":"images/posts/post-2.png", "caption": "Lorem ipsum dolor sit amet", "text": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium." })
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    @@include('./__mod/__post.html',{ "modify": "", "image":"images/posts/post-3.png", "caption": "Lorem ipsum dolor sit amet", "text": "Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium." })
+                </div>
+                <div class="col-xs-12">
+                    <div class="post__arrow">
+                        <a href="#" class="post__arrow__left"></a>
+                        <a href="#" class="post__arrow__right"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    emblem-->
+    <div class="emblems">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-3 emblem">
+                    <img class="emblem__image" src="images/emblems/emblem-1.png" alt="">
+                </div>
+                <div class="col-xs-6 col-md-3 emblem">
+                    <img class="emblem__image" src="images/emblems/emblem-2.png" alt="">
+                </div>
+                <div class="col-xs-6 col-md-3 emblem">
+                    <img class="emblem__image" src="images/emblems/emblem-3.png" alt="">
+                </div>
+                <div class="col-xs-6 col-md-3 emblem">
+                    <img class="emblem__image" src="images/emblems/emblem-4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    contacts-->
+    <section class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    @@include('./__mod/__logo.html',{ "modify":"logo_contacts" })
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                    @@include('./__el/__readmore.html',{ "modify":"read-more_contacts"})
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h4 class="contacts__caption">Recent Posts</h4>
+                    <a href="#" class="recent-post">
+                        <span class="recent-post__date">
+                            September 08, 2015
+                        </span>
+                        <span class="recent-post__text">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                        </span>
+                    </a>
+                    <a href="#" class="recent-post">
+                        <span class="recent-post__date">
+                            September 08, 2015
+                        </span>
+                        <span class="recent-post__text">
+                            Diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                        </span>
+                    </a>
+                    <a href="#" class="recent-post">
+                        <span class="recent-post__date">
+                            September 08, 2015
+                        </span>
+                        <span class="recent-post__text">
+                            Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima
+                        </span>
+                    </a>
+                </div>
+                <div class="clearfix visible-sm"></div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h4 class="contacts__caption">Our Twitter</h4>
+                    <div class="twitter-post">
+                        <span class="twitter-post__text">
+                            <a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming
+                        </span>
+                        <span class="twitter-post__date">
+                            3 mins ago
+                        </span>
+                    </div>
+                    <div class="twitter-post">
+                        <span class="twitter-post__text">
+                            Mirum est <a href="#">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
+                        </span>
+                        <span class="twitter-post__date">
+                            5 mins ago
+                        </span>
+                    </div>
+                    <div class="twitter-post">
+                        <span class="twitter-post__text">
+                            Soluta nobis option bit.ly/1Hniso7
+                        </span>
+                        <span class="twitter-post__date">
+                            20 days ago
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h4 class="contacts__caption">Dribbble Widget</h4>
+                    <ul class="widget clearfix">
+                        <li class="widget__image">
+                            <a href="#"><img src="images/double-widget/widget-1.png" alt=""></a>
+                        </li>
+                        <li class="widget__image">
+                            <a href="#"><img src="images/double-widget/widget-2.png" alt=""></a>
+                        </li>
+                        <li class="widget__image">
+                            <a href="#"><img src="images/double-widget/widget-3.png" alt=""></a>
+                        </li>
+                        <li class="widget__image">
+                            <a href="#"><img src="images/double-widget/widget-4.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!--    footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item">Copyright &copy; 2015 Waxom</li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Privacy Policy</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">FAQ</a></li>
+                        <li class="footer-menu__item"><a href="#" class="footer-menu__link">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <ul class="footer-menu footer-menu__right">
+                        <li class="footer-menu__item">Designed by <span>ThemeFire</span></li>
+                        <li class="footer-menu__item">Only on <span>Envato Market</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--   конец контента сайта-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

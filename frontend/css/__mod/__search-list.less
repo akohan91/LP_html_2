@@ -1,0 +1,36 @@
+.search-list {
+    &__icon {
+        float: left;
+        margin-right: 25px;
+        margin-top: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &__card {
+            display: block;
+            width: 18px;
+            height: 24px;
+            background-image: url(../images/icons/icon-card.png);
+            background-position: center top;
+            background-repeat: no-repeat;
+            transition: background-position 0.3s;
+            &:hover {
+                background-position: center bottom;
+                transition: background-position 0.3s;
+            }
+        }
+        &__search {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url(../images/icons/icon-search.png);
+            background-position: center top;
+            background-repeat: no-repeat;
+            transition: background-position 0.3s;
+            &:hover {
+                background-position: center bottom;
+                transition: background-position 0.3s;
+            }
+        }
+    }
+}

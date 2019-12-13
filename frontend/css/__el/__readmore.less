@@ -1,0 +1,40 @@
+.read-more {
+    display: inline-block;
+    a {
+        display: block;
+        font: normal 1em "Montserrat";
+        text-decoration: none;
+        color: #c7b299;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__arrow {
+        display: inline-block;
+        margin-left: 10px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 5px;
+        border-color: transparent transparent transparent #c7b299;
+    }
+    &:hover &__arrow {
+        border-color: transparent transparent transparent #fff;
+    }
+    &_contacts {
+        margin-top: 15px;
+        a {
+            color: #fff;
+            &:hover {
+                color: #555555;
+            }
+        }
+        .read-more__arrow {
+            border-color: transparent transparent transparent #fff;
+        }
+        &:hover .read-more__arrow {
+            border-color: transparent transparent transparent #555555;
+        }
+    }
+}

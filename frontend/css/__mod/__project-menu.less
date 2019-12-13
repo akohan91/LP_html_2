@@ -1,0 +1,30 @@
+.project-menu {
+    margin: 40px 0;
+    ul {
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: 5px;
+            a {
+                display: inline-block;
+                padding: 10px 17px;
+                border: 1px solid #ebebeb;
+                border-radius: 5px;
+                color: #8c8c8c;
+                background: #fff;
+                transition: color 0.5s, background 0.5s;
+                &:hover {
+                    text-decoration: none;
+                    background: #998675;
+                    color: #fff;
+                    transition: color 0.5s ease-in-out, background 0.5s ease-in-out;
+                }
+                &.active {
+                    text-decoration: none;
+                    background: #998675;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

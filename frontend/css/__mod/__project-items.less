@@ -1,0 +1,96 @@
+.project {
+    &__image {
+        position: relative;
+        img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        .triangle {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            ;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 15px 12px 15px;
+            border-color: transparent transparent #fff transparent;
+        }
+    }
+    &__descr {
+        padding: 20px;
+        &__cap {
+            color: #c7b299;
+            font: 600 1.3em "Raleway";
+            margin-bottom: 8px;
+        }
+        &__text {
+            color: #d1d1d1;
+            font: normal 0.875em "Montserrat";
+        }
+    }
+    &__icons {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        visibility: hidden;
+        &:after {
+            display: inline-block;
+            content: "";
+            height: 100%;
+            vertical-align: middle;
+        }
+        &__link,
+        &__lupa {
+            display: inline-block;
+            content: "";
+            height: 26px;
+            width: 26px;
+            vertical-align: middle;
+            margin: 5px;
+            &:hover {
+                background-position: center bottom;
+                transition: background-position 0.5s;
+            }
+        }
+        &__link {
+            background-image: url('../images/icons/icon-link.png');
+            background-position: center top;
+            background-repeat: no-repeat;
+            transition: background-position 0.5s;
+        }
+        &__lupa {
+            background-image: url('../images/icons/icon-lupa.png');
+            background-position: center top;
+            background-repeat: no-repeat;
+            transition: background-position 0.5s;
+        }
+    }
+    &:hover {
+        background: #362f2d;
+    }
+    &:hover &__descr {
+        &__cap {
+            color: #fff;
+        }
+        &__text {
+            color: #c7b299;
+        }
+    }
+    &:hover &__image {
+        .triangle {
+            border-color: transparent transparent #362f2d transparent;
+        }
+    }
+    &:hover &__icons {
+        visibility: visible;
+    }
+    margin: 15px 0;
+}

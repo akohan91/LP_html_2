@@ -1,0 +1,60 @@
+.service {
+    padding: 20px 0;
+    text-align: center;
+    &__link {
+        display: block;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+        &__img {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            overflow: hidden;
+            text-align: left;
+            img {
+                position: absolute;
+                top: 0;
+                bottom: auto;
+            }
+        }
+        &:hover &__img {
+            img {
+                top: auto;
+                bottom: 0;
+            }
+        }
+        &__caption {
+            margin-bottom: 15px;
+            color: #555555;
+            font-size: 1.37em;
+            text-decoration: none;
+        }
+        &:hover &__caption {
+            color: #c7b299;
+        }
+        &__diskr {
+            p {
+                font-size: 0.8em;
+                color: #8c8c8c;
+            }
+        }
+        &__border {
+            width: 70px;
+            height: 3px;
+            margin: 0 auto;
+            margin-top: 25px;
+            background: #f1eee9;
+        }
+        &:hover &__border {
+            background: #c7b299;
+        }
+    }
+}
+.service__link__border.count {
+    width: 30px;
+    height: 2px;
+}
